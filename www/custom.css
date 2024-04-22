@@ -1,0 +1,584 @@
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  margin-top: 5px;
+  float: right;
+}
+
+li a {
+  color: #000;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size:14px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.grid{
+  height:23px;
+  position:relative;
+  bottom:4px;
+}
+
+.signbutton{
+  background-color: #4885ed;
+  color: #FF3333;
+  border:none;
+  border-radius:3px;
+  padding:7px 10px;
+  position:relative;
+  bottom:7px;
+  font-weight:bold;
+}
+
+.logo {
+  margin-top: 275px;
+  margin-bottom: 25px;
+  text-align: center; /* Centers the image */
+}
+
+.logo img {
+  max-width: 800px;
+  width: auto;
+  height: auto;
+  margin: 0 auto; /* This will center the image horizontally */
+}
+
+.bar{
+  position: relative;
+  color: #ffffffff;
+  background-color: #FF3333;
+  margin:0 auto;
+  width:800px;
+  border-radius:20px;
+  border: 2px solid #ffffffff;
+  padding-left: 20px;
+}
+
+.bar:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.bar:focus-within{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline:none;
+}
+
+
+.searchbar{
+  height: 70px;
+  color: #FFFFFF;  /* This sets the text color to white */
+  border: none;
+  width: 500px;
+  font-size: 16px;
+  outline: none;
+  background-color: #FF3333;
+  font-family: 'poppins-medium', sans-serif; /* Added this line */
+}
+
+
+.voice{
+  height:20px;
+  position:relative;
+  top:5px;
+  left:10px;
+}
+
+.buttons{
+  margin-top:30px;
+  text-align: center;
+}
+
+.button{
+  background-color: #FFFFFF;
+  border:none;
+  color:#707070;
+  font-size:15px;
+  padding: 10px 20px;
+  margin:5px;
+  border-radius:4px;
+  outline:none;
+  font-family: 'RobotoMono', sans-serif;
+}
+
+.button:hover{
+  border: 1px solid #c8c8c8;
+  padding: 9px 19px;
+  color:#808080;
+}
+
+.button:focus{
+  border:1px solid #4885ed;
+  padding: 9px 19px;
+}
+
+#filter_btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#filter_btn img {
+  width: 25px;
+  height: 25px;
+}
+
+#filter_panel {
+  width: 100%;
+  text-align: center;
+  /* Add other styles as necessary */
+}
+
+
+/* Current CSS */
+.bar-wrapper {
+  position: relative;
+  width: 575px;
+  margin: auto;
+}
+
+
+
+.custom-action-button {
+  position: absolute;
+  background-color: #244DB6;
+  left: 10px; /* or your specific spacing */
+  top: 5px;
+  background-image: url('settings.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;  /* Adjust based on your image dimensions */
+  height: 30px;  /* Adjust based on your image dimensions */
+  border: none;  /* Removes the default button styling */
+}
+
+
+.custom-search-button {
+  position: absolute;
+  background-color: #FF3333;
+  right: 10px; /* Adjust to position the button at the desired distance from the right edge */
+  top: 50%; /* Centers the button vertically */
+  transform: translateY(-50%); /* Adjusts for the exact vertical center */
+  background-image: url('search.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  border: none;
+  z-index: 1000;
+}
+
+
+
+
+
+
+#custom-sidebar .form-group {
+  flex: 1;
+  margin-bottom: 0; /* optional: to remove extra vertical space */
+}
+
+#custom-sidebar .shiny-input-container {
+  width: 100%; /* Ensures inner contents take up full width */
+}
+
+
+
+
+#filter_and_sidebar {
+  position: relative;  /* Positioning context for absolutely positioned children */
+}
+
+#custom-sidebar {
+  display: flex;
+  top: 40px;
+  justify-content: left; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  flex-wrap: nowrap; /* Keeps items in a single line */
+  position: absolute;
+ 
+  min-width: 800px;
+}
+
+
+
+
+/* Removes shadow from the box and rounds its corners */
+.custom-box {
+  display: flex;
+  justify-content: center;  /* changed from flex-start */
+  align-items: center;
+  width: 400px;
+  height: 50px;  /* Set a specific height */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  outline:none;
+  padding: 5px;  /* Reduced padding */
+  box-shadow: none; /* No shadow */
+}
+/* Makes the select inputs rounded */
+.custom-box select {
+  border-radius: 15px;
+  width: 45%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+
+
+/* Rest of your existing CSS */
+
+#date_levels {
+  width: 200px !important;
+}
+
+
+
+
+
+
+
+
+/* General Styling for all selectize-input dropdown menus in the app */
+.selectize-control.single .selectize-input, 
+.selectize-dropdown.single {
+    background-color: #ffffff !important;
+}
+
+/* Adding border, rounded corners, and background-color for styled-box dropdown */
+.styled-box .dropdown-options .selectize-control.single .selectize-input, 
+.styled-box .dropdown-options .selectize-dropdown.single {
+    border: 1px solid #ccc !important;
+    border-radius: 10px !important;
+}
+
+/* Container for all the boxes */
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 90%;
+  padding: 35px 0; /* Adds spacing around the container so boxes don't touch the screen edge */
+  display: flex;
+  flex-wrap: wrap; /* Allows boxes to wrap onto the next line */
+  justify-content: space-between;
+}
+
+/* Individual box styling - reuse 'styled-box' for consistency */
+.styled-box.box1 {
+  box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+  background-color: #ffffff;
+  border: 2px solid;
+  color: #707070;
+  padding: 10px;
+  margin-bottom: 20px; /* Space between rows */
+  border-radius: 15px;
+  outline: none;
+  box-shadow: none;
+  width: 100%; /* By default, each box takes the full width of the container */
+}
+
+
+
+.styled-box.box2 {
+  box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+  background-color: #ffffff;
+  border: 1px solid rgba(234, 67, 54, 0.5);
+  color: #707070;
+  padding: 10px;
+  margin-bottom: 20px; /* Space between rows */
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0px 5px 0px rgba(234, 67, 54, 0.5);
+  width: 100%; /* By default, each box takes the full width of the container */
+}
+
+.styled-box.box3 {
+  box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+  background-color: #ffffff;
+  border: 1px solid rgba(52, 168, 83, 0.5);
+  color: #707070;
+  padding: 10px;
+  margin-bottom: 20px; /* Space between rows */
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0px 5px 0px rgba(52, 168, 83, 0.5);
+  width: 100%; /* By default, each box takes the full width of the container */
+}
+
+/* For the third row, where boxes are side-by-side */
+.styled-box.half {
+  justify-content: space-between;
+  width: 50%; /* A bit less than 50% to account for rounding errors and ensure they fit in one row */
+}
+
+.styled-box.half:nth-child(2), 
+.styled-box.half:nth-of-type(2) {
+    margin-left: auto;
+}
+
+
+
+.styled-box .box-title-section {
+  position: relative; /* Necessary for absolute positioning of the pseudo-element */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;  /* Assuming you also want 10px padding at the bottom */
+  padding-left: 10px;
+  background-color: #ffffff;
+}
+
+.styled-box .box-title-section::after {
+  content: ""; 
+  position: absolute;
+  bottom: 0;
+  left: -10px; /* Assuming a padding of 5px, adjust as needed */
+  right: -10px; /* Adjust this too if the padding is different */
+  height: 2px; 
+  background-color: #000000; 
+}
+
+
+
+
+
+/* Title Text */
+.styled-box .box-title1 {
+  font-size: 16px;
+  font-weight: 400;
+  flex-grow: 1;
+  margin-top: 0px;
+  font-family: 'RobotoMono', sans-serif; /* Added this line */
+}
+
+
+.styled-box .box-title2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(234, 67, 54, 0.5);
+  flex-grow: 1;
+  margin-top: 5px;
+}
+
+.styled-box .box-title3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(52, 168, 83, 0.5);
+  flex-grow: 1;
+  margin-top: 5px;
+}
+
+/* Vertical Alignment for the word in Selectize Input */
+.selectize-control.single .selectize-input {
+    display: flex;
+    align-items: center;
+    padding: 5px 30px 5px 10px !important;
+    height: auto;
+}
+
+/* Position the dropdown 5px lower */
+.selectize-dropdown {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Fix for overlapping dropdown arrow inside the selectize input */
+.selectize-control.single .selectize-input:after {
+    right: 10px;
+}
+
+/* Dropdown/SelectizeInput Options */
+.styled-box .dropdown-options {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  margin-bottom: -13px;
+}
+
+/* Main Content Area */
+.styled-box .box-content {
+  margin-top: 10px;
+}
+
+/* Additional Controls */
+.styled-box .additional-controls {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+/* Download Button Style */
+#download_file {
+  border: none;
+  background-image: url('download-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  margin-top: 10px;
+}
+
+/* Adjust the dropdown arrow to vertically center */
+.styled-box .dropdown-options .selectize-control.single .selectize-input:before {
+    line-height: 1.5em;
+}
+
+/* Styling focused state of selectize input */
+.selectize-input.focus, 
+.selectize-input.dropdown-active {
+    box-shadow: none !important;
+}
+
+/* To ensure dropdown content does not exceed its container */
+.selectize-dropdown-content {
+    white-space: nowrap;
+}
+
+
+
+.download-btn {
+  border: none !important;
+}
+
+/* Style the container that holds multiple selectize inputs */
+.multi-dropdown {
+  display: flex;
+  gap: 10px;  /* Adjust the gap between them as desired */
+  margin-bottom: -22px;
+}
+
+
+.selectize-control.single .selectize-input {
+  border-radius: 10px !important;
+}
+
+/* Remove the border from all download buttons */
+.download-btn, #download_file, #download_file_2 {
+border: none !important;
+}
+
+
+/* Base box styling */
+.shiny-box {
+  border: 1px solid #dcdcdc;  /* Light grey border */
+  background-color: #ffffff; /* White background */
+  border-radius: 5px;        /* Slight rounding of corners */
+  padding: 15px;             /* Padding inside the box */
+  box-shadow: none;          /* No shadow for flat appearance */
+  position: relative;        /* To place the top separator absolutely */
+}
+
+/* Separator styling */
+.shiny-box .separator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px;              /* Adjust based on your requirement */
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;           /* Padding for the options/icons */
+}
+
+/* Icons/Options inside separator */
+.shiny-box .separator .option {
+  margin-right: 10px;        /* Space between options/icons */
+}
+
+/* If using an icon library like FontAwesome, adjust class accordingly */
+.shiny-box .separator .icon {
+  font-size: 16px;           /* Adjust based on your requirement */
+}
+
+
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'poppins-black';
+  src: url('Poppins-Black.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'poppins-medium';
+  src: url('Poppins-Medium.ttf') format('truetype');
+}
+
+
+
+.pattern-grid-md {
+  /* Adjust padding and margin as necessary */
+  padding: 0;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.bodymain {
+  background-color: #244DB6;
+  background-image: url('noise-light.png');
+  background-repeat: repeat;
+  height: 100vh; /* This ensures the element takes up the entire height of the viewport */
+}
+
+
+ .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pattern-grid-md.custom-grid {
+  background-color: #FFFCF4;
+  background-image: linear-gradient(to right, #244DB6 1px, transparent 1px), linear-gradient(to bottom, #244DB6 1px, transparent 1px);
+}
+
+.searchbar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Default is 0.54 for placeholders */
+}
+
+.searchbar:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FFFFFF;
+}
+
+.searchbar::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FFFFFF;
+}
+
+
+.parent-container-class {
+  display: flex;
+  align-items: center;  /* Vertically aligns child elements to the middle */
+}
+
+
+#arrow-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 220px;         /* Adjust as per your image size */
+  height: 220px;        /* Adjust as per your image size */
+  cursor: pointer;
+  background-image: url('arrow.gif');  /* Assuming arrow.png is the name of your image */
+  background-size: cover; /* To make sure the image covers the div completely */
+}
